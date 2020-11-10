@@ -123,6 +123,10 @@ header {
   padding-left: 10px;
 }
 
+#modal {
+	display: none;
+}
+
 
 
 
