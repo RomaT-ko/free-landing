@@ -162,15 +162,68 @@ header {
 	margin-bottom: 47px;
 }
 
-.slider__btn {
+.default-btn {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 500;
-	padding: 14px 42px 14px 21px;
+	padding: 14px 21px;
 	border: 1px solid #ffc222;
+	border-right-width: 20px;
+	position: relative;
+	outline: none;
 }
 
+.default-btn:before {
+	content: '\f105';
+	font-family: 'icomoon';
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: -12px;
+}
 
+.slider__inner {
+	position: relative;
+}
 
+.slick-btn {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	background-color: #ffc222;
+	position: absolute;
+	top: 70%;
+	outline: none;
+	transition: background-color .15s ease-in-out;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.slick-btn.slick-disabled {
+	cursor: default;
+	background-color: transparent;
+}
+
+.slick-btn:before {
+	content: '\f104';
+	font-family: 'icomoon';
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.slick-next:before {
+	content: '\f105';
+}
+
+.slick-prev:before {
+	content: '\f104';
+}
+
+.slick-next {
+	right: 0;
+}
 
 
