@@ -127,6 +127,49 @@ header {
 	display: none;
 }
 
+.slider {
+	background-image: url("../img/slider-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	min-height: 500px;
+}
+
+.slider__item-content {
+	text-align: center;
+	padding-top: 110px;
+	max-width: 665px;
+	margin: 0 auto;
+}
+
+.slider__title {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	color: #fff;
+	margin-bottom: 22px;
+}
+
+.slider__text {
+	color: #d3d2d2;
+	font-family: "PT Serif", sans-serif;
+	line-height: 24px;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 47px;
+}
+
+.slider__btn {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 14px 42px 14px 21px;
+	border: 1px solid #ffc222;
+}
+
 
 
 
