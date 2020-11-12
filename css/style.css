@@ -342,7 +342,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 300px;
+	min-height: 300px;
 	padding: 37px 0 47px;
 }
 
@@ -406,8 +406,7 @@ header {
 
 .form__box-inner label,
 .form__box-inner input,
-.form__box-inner textarea,
-.form__box-inner select {
+.form__box-inner textarea {
 	display: block;
 	width: 100%;
 }
@@ -419,8 +418,7 @@ header {
 }
 
 .form__box-inner input,
-.form__box-inner textarea,
-.form__box-inner select {
+.form__box-inner textarea {
 	border: 1px solid #e6e6e6;
 	height: 40px;
 	outline: none;
@@ -434,11 +432,77 @@ header {
 	background: transparent;
 }
 
+/*jquery select START*/
+
+.form__box-inner .jq-selectbox.jqselect {
+	display: block;
+	width: 100%;
+}
+
+.form__box-inner .jq-selectbox__select {
+	border: 1px solid #e6e6e6;
+	height: 40px;
+	padding: 0 10px;
+}
+
+.form__box-inner .jq-selectbox__trigger-arrow:before {
+	content: '\f105';
+	font-family: 'icomoon';
+	position: absolute;
+	transform: rotate(90deg);
+	right: 17px;
+	top: 0;
+}
+
+.form__box-inner .jq-selectbox__dropdown {
+	width: 100%;
+	margin: 2px 0 0;
+	padding: 0;
+	border: 1px solid #e6e6e6;
+	background: #FFF;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.form__box-inner .jq-selectbox li {
+	min-height: 18px;
+	padding: 5px 10px 6px;
+	color: #231F20;
+}
+.form__box-inner .jq-selectbox li.selected {
+	background-color: #A3ABB1;
+	color: #FFF;
+}
+.form__box-inner .jq-selectbox li:hover {
+	background-color: #08C;
+	color: #FFF;
+}
+.form__box-inner .jq-selectbox li.disabled {
+	color: #AAA;
+}
+.form__box-inner .jq-selectbox li.disabled:hover {
+	background: none;
+}
+.form__box-inner .jq-selectbox li.optgroup {
+	font-weight: bold;
+}
+.form__box-inner .jq-selectbox li.optgroup:hover {
+	background: none;
+	color: #231F20;
+	cursor: default;
+}
+.form__box-inner .jq-selectbox li.option {
+	padding-left: 25px;
+}
+
+/*jquery select END*/
+
+
 .form__box-inner textarea {
 	margin-top: -4px;
 	min-height: 195px;
 	margin-bottom: 36px;
 	padding: 10px;
+	resize: none;
 }
 
 .form__box-right button {
