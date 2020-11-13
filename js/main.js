@@ -12,4 +12,8 @@ $(function () {
         $.fancybox.close()
     })
 
+    $('.header__btn-menu').click(() => {
+        $('.menu ul').slideToggle();
+    })
+
 });

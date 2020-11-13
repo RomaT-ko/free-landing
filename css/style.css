@@ -102,6 +102,11 @@ header {
   justify-content: space-between;
 }
 
+.header__btn-menu {
+	display: none;
+	font-size: 28px;
+}
+
 .menu li {
   display: inline-block;
 }
@@ -762,7 +767,12 @@ header {
 }
 
 .footer__map {
+	flex-basis: 55%;
 	padding-top: 12px;
+}
+
+.footer__map iframe {
+	width: 100%;
 }
 
 .footer__info {
