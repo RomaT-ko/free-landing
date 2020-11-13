@@ -8,4 +8,8 @@ $(function () {
 
     $('select').styler();
 
+    $('#close-modal').click(() => {
+        $.fancybox.close()
+    })
+
 });
